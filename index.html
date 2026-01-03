@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bellehelen Spa & Wellness - Απολαύστε χαλαρωτικό μασάζ και θεραπείες ομορφιάς στο Spa Belle στα Λουτρά Ωραίας Ελένης. Hot stone, aromatherapy και θεραπείες σώματος για ευεξία και χαλάρωση.">
+  <meta name="keywords" content="spa, θεραπείες ομορφιάς, σπα, wellness, massage, μασάζ, facial massage, beauty, self-care, χαλάρωση, ομορφιά, hot stone massage, aromatherapy, facial treatment, body treatment, χαλαρωτικό μασάζ, spa Λουτρά Ωραίας Ελένης">
+  <meta name="author" content="Bellehelen Spa">
+  <title>Bellehelen Spa & Wellness</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="images/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="images/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<style>
+  body,header{background:#f1f4ee}
+  header h1,nav a{color:#5a4b43;font-weight:700}
+  .btn,header h1,nav a{font-weight:700}
+  .btn,.card-link,nav a{text-decoration:none}
+  .hours-table,body{font-family:Poppins,sans-serif}
+  .card,.hours-table{width:280px;overflow:hidden}
+  .contact h3,.hero h2,.services h3{font-family:'Playfair Display',serif}
+  .contact,.footer,.hero,.services,header h1,nav{text-align:center}
+  #toTopBtn,.btn{cursor:pointer}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{color:#333;line-height:1.6}
+  header{border-bottom:1px solid #f1f4ee;padding:20px;position:relative}
+  .hours-table td,nav{border-bottom:1px solid #e6d5ca}
+  .header-top{display:flex;align-items:center;justify-content:center;position:relative;padding:15px 0}
+  .logo{height:120px;position:absolute;left:20px;top:50%;transform:translateY(-50%)}
+  header h1{font-size:2rem;margin:0}
+  .btn,.hero,.hero h2{position:relative}
+  nav{border-top:1px solid #e6d5ca;padding:15px 0}
+  nav a{margin:0 20px;font-size:1.3rem;transition:color .3s}
+  nav a:hover{color:#a17c6b}
+  .hero{background:url(images/spa-belle.jpg) center center/cover no-repeat;height:80vh;display:flex;align-items:center;justify-content:center;color:#fff;padding:0 20px}
+  .btn,.card h4,.services h3{color:#5a4b43}
+  .hero::before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.3)}
+  .hero h2{font-size:2.7rem;margin-bottom:20px;z-index:1}
+  .btn{background-color:#f6e5dc;padding:15px 30px;border:none;border-radius:30px;font-size:1.2rem;transition:background-color .3s;z-index:1}
+  .btn:hover{background-color:#e6d5ca}
+  .services{padding:60px 20px;background:#fff}
+  .services h3{font-size:2.5rem;margin-bottom:40px}
+  .service-box{display:flex;flex-wrap:wrap;justify-content:center;gap:30px}
+  .services.schedule h3{margin-bottom:-16px}
+  .card{background:#fffefc;border-radius:15px;box-shadow:0 4px 12px rgba(0,0,0,.2);transition:transform .3s}
+  .card-link{color:inherit;display:block}
+  .card img{width:100%;height:200px;object-fit:cover}
+  .card:hover{transform:translateY(-8px)}
+  .card h4{margin:20px 0 10px;font-size:1.5rem}
+  .card p{padding:0 15px 20px;font-size:1rem;color:#666}
+  .hours-table{border-collapse:collapse;margin:10px auto;background:#f1f4ee;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,.12)}
+  .contact,.hours-table th{background:#f6e5dc;color:#5a4b43}
+  .hours-table th{padding:12px;text-align:left;font-weight:600;font-size:1.05rem;letter-spacing:.5px}
+  .hours-table td{padding:11px 12px;font-size:1rem;color:#444}
+  .hours-table tr:last-child td{border-bottom:none}
+  .hours-table tbody tr:hover{background:#fff8ea}
+  .contact{padding:50px;border-top:1px solid #e6d5ca}
+  .contact h3{font-size:2rem}
+  .contact h4,.contact p{text-align:left;max-width:400px;margin:5px auto;line-height:1.6}
+  .contact a,
+  .contact a:visited {color: inherit; text-decoration: none;}
+  .contact a:hover {text-decoration: underline;}
+  .footer{position:static;left:0;bottom:0;width:100%;background-color:#8c4a3b;color:#fff}
+  @media (max-width:768px){
+    .header-top{flex-direction:column;position:static}
+    .logo{position:static;transform:none;height:80px;margin-bottom:10px}
+    header h1{font-size:1.5rem}
+    nav a{margin:0 10px;font-size:1rem}
+    .hero h2{font-size:2.2rem}
+    .service-box{flex-direction:column;align-items:center}
+    .header-top{flex-direction:column}}
+    #toTopBtn{position:fixed;bottom:30px;right:200px;width:50px;height:50px;background:#8c4a3b;color:#fff;border:none;border-radius:50%;font-size:24px;display:none;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.25);transition:opacity .3s,transform .3s}
+</style>
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <img src="images/FINAL final logo Belle Helene (1)(1).png" alt="Belle Helen Spa Logo" class="logo">
+      <h1>Belle Helene Wellness & Spa</h1>
+    </div>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section class="hero" style="background: url(images/spa-belle.jpg) no-repeat center center/cover;">
+    <div>
+      <h2>Relax - Refresh - Renew.</h2>
+<!--     <a href="booking2.html" class="btn">Κλεισε ραντεβου</a>--> 
+    </div>
+  </section>
+  <section class="services" id="services">
+    <h3>Οι παροχές μας</h3>
+    <div class="service-box">
+      <a href="1παροχη.html" class="card-link">
+      <div class="card">
+        <img src="images/παροχη1.jpg" loading="lazy" alt="Μασάζ">
+        <h4>Μασάζ</h4>
+        <p>Relax with a soothing full-body massage designed to release tension and restore balance.</p>
+      </div>
+      </a>
+      <a href="2παροχη.html" class="card-link">
+        <div class="card">
+          <img src="images/παροχη2.jpg" loading="lazy" alt="Περιποίηση σώματος">
+          <h4>Περιποίηση σώματος, Ιαπονικό σπα κεφαλής</h4>
+          <p>Rejuvenate your skin with a luxury facial treatment using premium natural products.</p>
+        </div>
+      </a>
+      <a href="3παροχη.html" class="card-link">
+      <div class="card">
+        <img src="images/παροχη3.jpg" loading="lazy" alt="Περιποίηση άκρων">
+        <h4>Περιποίηση σπα άκρων</h4>
+        <p>Απαλά χέρια, ξεκούραστα πόδια, ολοκληρωμένη φροντίδα.</p>
+      </div>
+      </a>
+    </div >
+  </section>
+  <section class="services schedule">
+    <h3>Ώρες λειτουργίας</h3>
+  <div class="services">
+    <table class="hours-table">
+      <thead>
+        <tr>
+          <th>Ημέρα</th>
+          <th>Ώρες Λειτουργίας</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Δευτέρα</td><td>11:00 – 21:00</td></tr>
+        <tr><td>Τρίτη</td><td>κλειστα</td></tr>
+        <tr><td>Τετάρτη</td><td>11:00 – 21:00</td></tr>
+        <tr><td>Πέμπτη</td><td>11:00 – 21:00</td></tr>
+        <tr><td>Παρασκευή</td><td>11:00 – 21:00</td></tr>
+        <tr><td>Σάββατο</td><td>10:00 – 18:00</td></tr>
+        <tr><td>Κυριακή</td><td>κλειστά</td></tr>
+      </tbody>
+    </table>
+  </div>
+  </section>
+  <button id="toTopBtn">▲</button>
+  <script>
+  const toTopBtn = document.getElementById("toTopBtn");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      toTopBtn.style.display = "flex";
+    } else {
+      toTopBtn.style.display = "none";
+    }
+  });
+  toTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+  </script>
+  <section class="contact" id="contact">
+    <h4>Contact Us</h4>
+    <p>Email: bellehelenespa@gmail.com</p>
+    <p>
+  Instagram:
+  <a href="https://www.instagram.com/bellehelene_wellness_spa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+     target="_blank"
+     class="social-link">
+     @bellehelene_wellness_spa
+  </a>
+</p>
+    <p>Phone: 2741033493</p>
+    <p>Street: Ε.Ο. Ισθμου-Επιδαύρου, Λουτρά Ωραίας Ελένης</p>
+  </section>
+  <footer class="footer">
+    <p>&copy; 2025 Belle Helene Wellness & Spa </p>
+  </footer>
+</body>
+</html>
