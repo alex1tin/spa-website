@@ -17,6 +17,7 @@
 <link rel="icon" type="images/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="images/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
+
 <style>
   body,header{background:#f1f4ee}
   header h1,nav a{color:#5a4b43;font-weight:700}
@@ -46,10 +47,36 @@
   .btn:hover{background-color:#e6d5ca}
   .services{padding:60px 20px;background:#fff}
   .services h3{font-size:2.5rem;margin-bottom:40px}
-  .service-box{display:flex;flex-wrap:wrap;justify-content:center;gap:30px}
+  
+  .service-box{max-width: 1200px;margin: 0 auto;scroll-padding-left: 30px;display: flex;gap: 30px;overflow-x: auto;padding: 20px 20px 30px ;scroll-snap-type: x mandatory;-webkit-overflow-scrolling: touch;justify-content: flex-start}
+  .card{
+  flex: 0 0 calc((100% - 60px) / 3);
+  scroll-snap-align: start;
+  min-width: 260px;
+}
+.service-box::-webkit-scrollbar {
+  height: 8px;
+}
+
+.service-box::-webkit-scrollbar-thumb {
+  background: #e6d5ca;
+  border-radius: 10px;
+}
+
+.service-box::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.card {
+/*  flex: 0 0 auto; 
+  scroll-snap-align: start;*/
+  width: 100%;
+}
   .services.schedule h3{margin-bottom:-16px}
   .card{background:#fffefc;border-radius:15px;box-shadow:0 4px 12px rgba(0,0,0,.2);transition:transform .3s}
-  .card-link{color:inherit;display:block}
+  
+  .card-link{color:inherit;display:block;flex: 0 0 calc((100% - 60px) / 3);scroll-snap-align: start;min-width: 260px;}}
+  
   .card img{width:100%;height:200px;object-fit:cover}
   .card:hover{transform:translateY(-8px)}
   .card h4{margin:20px 0 10px;font-size:1.5rem}
@@ -188,5 +215,6 @@
   </footer>
 </body>
 </html>
+
 
 
